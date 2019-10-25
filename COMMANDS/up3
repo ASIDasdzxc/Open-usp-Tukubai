@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding: utf-8
 #
 # up3 ラストマージツール（Open usp Tukubai版）
@@ -28,7 +28,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from __future__ import print_function
+
 
 _usage = "up3 key=<key> <master_file> <tran_file>"
 _version = "Fri Oct 21 11:26:06 JST 2011"

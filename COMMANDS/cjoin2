@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding: utf-8
 #
 # cjoin2 マッチングセレクト（Open usp Tukubai版）
@@ -97,7 +97,7 @@ def setMasterDummyFixed(master_file,key_num,dummy_string):
 
 		master[key] = values
 
-	for v in master.values():
+	for v in list(master.values()):
 		num = len(v.split(" "))
 		dummy = " ".join([ dummy_string for e in range(num) ])
 		return master,dummy
@@ -132,7 +132,7 @@ def setMaster(master_file,key_num):
 def getDummyStr(master):
 	max_len = 0
 	max_str = "" 
-	for v in master.values():
+	for v in list(master.values()):
 		if max_len < len(v) :
 			max_len = len(v)
 			max_str = v
@@ -148,7 +148,7 @@ def getDummyStr(master):
 def utf2ucs(instr):
 	if sys.version_info < (3, 0):	# Python2なら
 		try:
-			outstr=unicode(instr, 'utf_8')	# utf8からunicdoeへ変換する
+			outstr=str(instr, 'utf_8')	# utf8からunicdoeへ変換する
 		except:
 			die("不当なマルチバイト文字が含まれています。")
 		return outstr
@@ -226,8 +226,8 @@ if __name__ == '__main__':
 		if key in master:
 			prev = " ".join(tokens[0:key_to])
 			end = " ".join(tokens[key_to:])
-			print(" ".join([prev,master[key],end]).rstrip(' '))
+			print((" ".join([prev,master[key],end]).rstrip(' ')))
 		else:
 			prev = " ".join(tokens[0:key_to])
 			end = " ".join(tokens[key_to:])
-			print(" ".join([prev,dummy,end]).rstrip(' '))
+			print((" ".join([prev,dummy,end]).rstrip(' ')))

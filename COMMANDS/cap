@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding: utf-8
 #
 # cap 半角英数の小文字を大文字に変換する（Open usp Tukubai版）
@@ -27,7 +27,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from __future__ import print_function
+
 import sys
 
 _usage = "cap [<f1> <f2> ..] <file>" # フィールドは省略可能

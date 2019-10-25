@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding: utf-8
 #
 # numchar 文字列を数値文字参照に変換（Open usp Tukubaiオリジナル）
@@ -27,7 +27,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from __future__ import print_function
+
 
 _usage = "numchar < <file>"
 _version = "Tue Sep 10 11:38:19 JST 2013"
@@ -75,4 +75,4 @@ if __name__ == '__main__':
 	for line in openReadFile("-"):
 		numlist=[]
 		for c in line.rstrip(): append_codepoint(c,numlist)
-		print("".join(map(lambda num: "&#x%x;" % num, numlist)))
+		print("".join(["&#x%x;" % num for num in numlist]))

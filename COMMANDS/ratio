@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding: utf-8
 #
 # ratio 構成比を求める（Open usp Tukubai版）
@@ -28,7 +28,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from __future__ import print_function
+
 
 _usage = "ratio key=<key> <file>"
 _option = "ref=<ref> -- 参照キーの指定"

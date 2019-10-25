@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding: utf-8
 #
 # check_cmp_name : name 形式データの値の大小関係をチェックする（Open usp Tukubai版）
@@ -27,7 +27,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from __future__ import print_function
+
 import sys
 import os
 import itertools
@@ -221,7 +221,7 @@ if __name__ == '__main__':
 	# nameファイルを閉じる
 	namefile.close()
 
-	namelist=namedict.keys()
+	namelist=list(namedict.keys())
 	# expression_typeが"tt"ならnameファイルの各行の組み合わせに対し総当たりで比較する
 	if expression_type=="tt":
 		count=0

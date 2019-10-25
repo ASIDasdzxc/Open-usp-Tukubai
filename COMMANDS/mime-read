@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding: utf-8
 #
 # mime-read ＭＩＭＥ型式データリード（Open usp Tukubai版）
@@ -28,7 +28,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from __future__ import print_function
+
 
 _usage = "mime-read <name> <file>"
 _usage1 = "mime-read -v <file>"

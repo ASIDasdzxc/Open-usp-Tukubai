@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding: utf-8
 #
 # haba : 表示幅をだす（Open usp Tukubai版）
@@ -27,7 +27,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from __future__ import print_function
+
 import sys
 import unicodedata
 
@@ -72,7 +72,7 @@ def to_unicode(s):
 	if sys.version_info >= (3, 0): return s
 	else:
 		try:
-			return unicode(s, 'utf_8')
+			return str(s, 'utf_8')
 		except:
 			error("不当なマルチバイト文字が含まれています。")
 

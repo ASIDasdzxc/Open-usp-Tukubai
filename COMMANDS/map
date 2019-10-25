@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding: utf-8
 #
 # map 縦ファイルを縦横ファイルに変換（Open usp Tukubai版）
@@ -28,7 +28,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from __future__ import print_function
+
 
 _usage = "map       [-<l>] num=<n>x<m> <file>"
 _usage1 = "map +yarr [-<l>] num=<n>x<m> <file>"

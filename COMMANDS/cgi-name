@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding: utf-8
 #
 # cgi-name ＰＯＳＴメソッドによる変数と値を name 形式に変換する（Open usp Tukubai版）
@@ -28,7 +28,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from __future__ import print_function
+
 
 _usage = "cgi-name [-d<c>][-i<string>] <param_file>"
 _option = "         [--template <html>]"

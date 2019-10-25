@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding: utf-8
 #
 # check_need_name フィールド必須チェック（Open usp Tukubai版）
@@ -93,7 +93,7 @@ class Checker:
 
 		remain = [ e for e in self.keys if e != None ]
 		if len(remain) != 0:
-			print("\n".join(remain))
+			print(("\n".join(remain)))
 			sys.exit(1)
 		else:
 			sys.exit(0)

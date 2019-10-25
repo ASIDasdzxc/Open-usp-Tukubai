@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding: utf-8
 # 
 # delf デリートフィールド（Open usp Tukubai版）
@@ -28,7 +28,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from __future__ import print_function
+
 
 _usage = "delf <f1> <f2> ... [file]"
 _version = "Sat Mar 10 17:18:43 JST 2012"
@@ -160,7 +160,7 @@ if __name__ == '__main__':
 	if direct:	# -dオプションによる直接処理
 		if not Python3:
 			#utf_8からユニコードに変換して改行を取る
-			line = unicode(line, "utf_8").rstrip()
+			line = str(line, "utf_8").rstrip()
 		else:
 			line = line.rstrip()
 		tokens = [ x for x in line.split(' ') if x ]
@@ -170,7 +170,7 @@ if __name__ == '__main__':
 	for line in file:
 		if not Python3:
 			#utf_8からユニコードに変換して改行を取る
-			line = unicode(line, "utf_8").rstrip()
+			line = str(line, "utf_8").rstrip()
 		else:
 			line = line.rstrip()
 		tokens = [ x for x in line.split(' ') if x ]

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding: utf-8
 #
 # block_getlast : 同一キーをもつレコードから、参照キーが同じ最終ブロックをすべて出力する（Open usp Tukubai版）
@@ -27,7 +27,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from __future__ import print_function
+
 import sys
 
 _usage = "block_getlast key=<key> ref=<ref> [<file>]"

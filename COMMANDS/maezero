@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding: utf-8
 #
 # maezero ゼロ埋めする（Open usp Tukubai版）
@@ -31,7 +31,7 @@
 # marumeからコードを拝借して応急処置で作った物です。→Python2/Python3共用化改修をした
 # コードの掃除が必要→掃除した
 
-from __future__ import print_function
+
 
 _usage = "maezero <f1.d1> <f2.d2> .. <file>"
 _version = "Sat Jul 13 17:11:48 JST 2013"

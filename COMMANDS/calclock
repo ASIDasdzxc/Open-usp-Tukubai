@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding: utf-8
 #
 # calclock UNIX時間計算（Open usp Tukubai版）
@@ -102,7 +102,7 @@ def normalMode(in_file,targets):
 		for t in targets:
 			fs[t] = fs[t] + " " + conv(fs[t],len(fs[t]))
 
-		print(" ".join(fs))
+		print((" ".join(fs)))
 
 def revMode(in_file,targets):
 	for line in in_file:
@@ -111,7 +111,7 @@ def revMode(in_file,targets):
 		for t in targets:
 			fs[t] = fs[t] + " " + revConv(fs[t])
 
-		print(" ".join(fs))
+		print((" ".join(fs)))
 
 def getTargetFields(args):
 	ans = []

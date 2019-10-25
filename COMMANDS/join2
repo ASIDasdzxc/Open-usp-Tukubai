@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding: utf-8
 #
 # join2 シーケンシャルマッチングジョイン（Open usp Tukubai版）
@@ -28,7 +28,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from __future__ import print_function
+
 
 _usage = "join2 [-d<string>] key=<n> <master> <tran>"
 _version = "Wed Oct 26 03:01:58 JST 2011"
@@ -110,7 +110,7 @@ class FieldLine:
 def to_unicode(s):
 	if sys.version_info >= (3, 0): return s	# Python3ではsには既にunicode文字列が入っている
 	try:
-		return unicode(s, 'utf_8')
+		return str(s, 'utf_8')
 	except:
 		error("不当なマルチバイト文字が含まれています。")
 

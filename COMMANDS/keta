@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding: utf-8
 #
 # keta 桁整形フィルタ（Open usp Tukubai版）
@@ -28,7 +28,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from __future__ import print_function
+
 
 _usage = "keta n1 n2 .. <filename>"
 _usage1 = "keta -v <filename>"
@@ -120,7 +120,7 @@ def to_unicode(s):
 	if sys.version_info >= (3, 0): return s
 	else:
 		try:
-			return unicode(s, 'utf_8')
+			return str(s, 'utf_8')
 		except:
 			error("不当なマルチバイト文字が含まれています。")
 

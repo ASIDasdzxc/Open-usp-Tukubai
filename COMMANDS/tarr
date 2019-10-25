@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #coding: utf-8
 # 
 # tarr 縦アレー: フィールドをレコードに分ける （Open usp Tukubai版）
@@ -28,7 +28,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-from __future__ import print_function
+
 
 _usage = "tarr [num=<n>] [-<m>] <file>"
 _version = "Thu Dec  8 11:22:55 JST 2011"
@@ -161,6 +161,6 @@ if __name__ == '__main__':
 	###########################################
 	for line in file:
 		# （Python2のときはutf_8からユニコードに変換して）改行を取る
-		if sys.version_info < (3, 0): line = unicode(line, "utf_8")
+		if sys.version_info < (3, 0): line = str(line, "utf_8")
 		line=line.rstrip()
 		op.output(line)
